@@ -1,0 +1,11 @@
+{
+  "name": "guest-api",
+  "version": "1.0.0",
+  "description": "API Rest",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Erick Welberth",
+  "license": "MIT"
+}
