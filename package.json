@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "",
+    "start": "nodemon index.js"
   },
   "author": "Erick Welberth",
   "license": "MIT",
