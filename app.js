@@ -1,11 +1,24 @@
 import cors from "cors";
 import express from "express";
+import { database } from "./config.js";
+import { Database } from "./src/database/index.js";
 
 const app = express();
 
 app.use(express.json());
 app.use(cors());
 
+async function connectDatabase() {
+  try {
+    await Database.authenticate();
+    await Database.sync();
+    console.log(`connection established with ${database.database}`);
+  } catch (error) {
+    console.error(`connection not established ${error}`);
+  }
+}
+
 export {
-  app
+  app,
+  connectDatabase
 }
