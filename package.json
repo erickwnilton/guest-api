@@ -14,12 +14,17 @@
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
+    "excel4node": "^1.8.2",
     "express": "^4.18.3",
+    "install": "^0.13.0",
     "mysql": "^2.18.1",
     "mysql2": "^3.9.2",
     "nodemon": "^3.1.0",
+    "npm": "^10.5.0",
     "sequelize": "^6.37.1",
-    "supertest": "^6.3.4"
+    "sequelize-cli": "^6.6.2",
+    "supertest": "^6.3.4",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.24.0",

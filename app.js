@@ -11,7 +11,6 @@ app.use(cors());
 async function connectDatabase() {
   try {
     await Database.authenticate();
-    await Database.sync();
     console.log(`connection established with ${database.database}`);
   } catch (error) {
     console.error(`connection not established ${error}`);
