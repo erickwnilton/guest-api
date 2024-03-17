@@ -1,4 +1,3 @@
-import { User } from "./users.js";
 import { DataTypes } from "sequelize";
 import { Database } from "../database/index.js";
 
@@ -41,5 +40,3 @@ export const Product = Database.define("products", {
     allowNull: false
   }
 })
-
-Product.hasOne(User);
