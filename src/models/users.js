@@ -1,5 +1,5 @@
-import { Product } from "./products.js";
 import { DataTypes } from "sequelize";
+import { Product } from "./products.js";
 import { Database } from "../database/index.js";
 
 export const User = Database.define("users", {
@@ -15,6 +15,14 @@ export const User = Database.define("users", {
   mail: {
     type: DataTypes.STRING,
     allowNull: false
+  },
+  companyId: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    references: {
+      key: "id",
+      model: "companies"
+    }
   },
   document: {
     type: DataTypes.STRING,
@@ -43,3 +51,4 @@ export const User = Database.define("users", {
 })
 
 User.hasMany(Product);
+Product.belongsTo(User);
